@@ -1,0 +1,351 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+}
+/* ================================= */
+/* Header */
+.header{
+    background-color: black;
+    
+    max-width: 100vw;
+    height: fit-content;
+    padding: 0 25px;
+    margin: auto;
+}
+
+.Container-Header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo a img{
+    width: 150px;
+}
+nav{
+    flex: 1;
+    display: inline-block;
+    text-align: right;
+}
+
+nav a{
+    /* display: ; */
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+}
+
+#maps{
+    background-color: red; 
+    padding: 5px;
+    border-radius: 15px;
+}
+
+nav a:hover{
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+@media(max-width: 800px){
+    nav a{
+        display: block;
+    }
+
+    
+}
+/* Header end */
+
+/* ====================================== */
+/* Maps*/
+.title-maps{
+    background-image: url("Maps/HEADER-MAPS.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+    height: fit-content;
+    margin: auto;
+}
+
+.container-maps{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    top: 225px;
+    padding: 15% 0;
+    /* position: relative; */
+}
+.container-maps a,p{
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(251, 250, 250);
+    font-weight: bolder;
+    font-size: 80px;
+    padding: 10px;
+}
+.container-maps p{
+    color: red;   
+}
+
+
+/* +++++++++ ARENA +++++++++*/  
+.title-arena{
+    background-color: #5f9ea0;
+    display: block;
+    max-width: 100vw;
+    height: fit-content;
+    margin: auto;
+}
+
+.des-arena{
+    text-align: center;
+}
+
+.des-arena h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+}
+
+.des-arena p{
+   
+    color: #f0ffff;
+    font-size: 30px;
+}
+/* ++++++++ ARENA END ++++++++ */
+/* ============================================ */
+
+
+/* ++++++++ Menu Maps ++++++++ */
+.arena{
+    background-color: #f0ffff;
+    max-width: 100vw;
+    height: fit-content;
+}
+
+.containe-arena{
+    padding-bottom: 20px;
+}
+
+.full-maps{
+
+    min-width: 100vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.full-maps img{
+    
+    border-radius: 7px;
+    box-shadow: 5px solid rgb(0, 0, 0);
+    height: 515px;
+    width: 915px;
+}
+.name-maps{
+    text-align: center;
+}
+.name-maps h1{
+    font-family: 'Bebas Neue', cursive;
+    color:#508d79;
+    font-size: 70px;  
+}
+.image-clip{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+.mini-map,.site-a,.site-b{
+    padding: 10px;
+    background-color: #c3d5d2;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.image-clip div img{
+    border-radius:7px;
+    width: 280px;
+    height: 212px;
+}
+.image-clip div h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #47703d;
+}
+
+.batas{
+
+    padding-bottom: 20px;    
+}
+.line{
+   
+    position: relative;
+}
+
+.line::after ,.line::before{
+    content: ' ';
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    width: 45%;
+    top: 45%;
+}
+
+.line::after{
+    left: 0;
+}
+
+.line::before{
+    right: 0;
+}
+.crl{
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+@media(max-width: 800px){
+    .full-maps img{
+        width: 100%;
+        height: auto;
+    }
+    .image-clip {
+        display: inline-block;
+        padding-left: 30%;  
+        padding-bottom: 20px;
+    } 
+    
+
+}
+
+/* ++++++++ Menu Maps Ends ++++++++ */
+
+/* Maps end */
+
+/* BATTLE ROYAL */
+/* +++++ TITLE DES +++++ */
+.btl-royal{
+    background-color: cadetblue;
+    display: block;
+    max-width: 100vw;
+    height: fit-content;
+    margin: auto;
+}
+/* +++++ TITLE DES END */
+
+
+/* ++++ MAPS +++++ */
+.btl-arena{
+    background-color: azure;
+    max-width: 100vw;
+    height: fit-content;
+}
+
+.Conten-btlArena{
+    align-content: center;
+}
+
+.btl-map {
+    min-width: 100vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btl-name{
+    text-align: center;
+}
+.btl-name h1{
+    font-family: 'Bebas Neue', cursive;
+    color:rgb(80, 141, 121);
+    font-size: 70px;
+}
+
+
+.back{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.back-button a{
+    font-family: 'Bebas Neue', cursive;
+}
+.back-button a button{
+    cursor: pointer;
+    z-index: 1;
+    border: 3px solid rgb(80, 141, 121);
+    background: transparent;
+    border-radius: 20px;
+    padding: 12px 35px;
+    font-size: 45px;
+    color: rgb(80, 141, 121); 
+}
+/* MAPS END */
+
+@media(max-width: 800px){
+    .btl-map img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+/* BATTLE ROYAL END */
+
+/* Footer */
+.footer{
+    background-color: black;
+    width: 100vw;
+    padding-bottom: 10px;
+    height: fit-content;
+}
+.title{
+    padding: 20px;
+    
+    text-align: center;
+   
+}
+.title h3{
+    font-size: 50PX;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright{
+    width: 100vw;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.copyright p{
+    color: white;
+    font-size: 20px;
+}
+/* Footer end */
+
+
+  

@@ -1,0 +1,277 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+}
+/* Header */
+.header{
+    background-color: black;
+    max-width: 100vw;
+    height: fit-content;
+    padding: 0 25px;
+    margin: auto;
+}
+
+.Container-Header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    flex: 1;
+    display: inline-block;
+    text-align: right;
+   
+}
+
+
+nav a{
+    /* display: ; */
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+}
+
+#home{
+    background-color: red; 
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+
+nav a:hover{
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+
+@media(max-width: 800px){
+    nav a{
+        display: block;
+    }
+  }
+.logo a img{
+    width: 150px;
+}
+/* Header end */
+
+/* Video Intro */
+.Intro{
+    background-image: url("backgorund-logo/Background.png");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+    height: 100vh;
+    
+}
+.Container-INTRO{
+    padding-top: 50vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.watch a button{
+    cursor: pointer;
+    z-index: 1;
+    border: 3px solid #fff;
+    background: transparent;
+    border-radius: 20px;
+    padding: 12px 35px;
+    font-size: 45px;
+    color: white; 
+}
+
+.watch a button:hover{
+    background-color: #ff0000;
+    border: 1px solid red;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+/* trailer end */
+
+/* popular agen */
+.popular-Hero{
+    width: 100vw;
+    background: rgba(28, 28, 28, 0.66);
+    background-image: linear-gradient(rgba(28, 28, 28, 0.66),black );
+}
+.container-ph{
+    width: 100vw;
+    padding: 2% 4%;
+    display: flex;
+    justify-content: space-between;
+}
+.gambar img{
+    border-radius: 10px;
+    align-items: center;
+    image-rendering: optimizeQuality;
+}
+
+.des-agen {
+    padding-top: 10%;
+    width: 700px;
+}
+
+.des-agen h3,h1,p{
+    padding-right: 50px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    color: azure;
+}
+.des-agen h3{
+    font-family: 'Bebas Neue', cursive;
+}
+.des-agen h1{
+    color: aqua;
+}
+
+.des-agen button{
+    color: aliceblue;
+    display: flex;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 19px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.des-agen button:hover{
+    color: #000000;
+    background: #00ffff;
+    transition: 0.5s;
+}
+
+@media(max-width: 800px){
+    .container-ph{
+        display: inline-block;
+    }
+    .des-agen h3,h1,p{
+        padding-right: none;
+    }
+}
+/* popular agen end */
+
+/* Latest news */
+.news {
+
+    background-image: url("backgorund-logo/apex.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: fit-content; 
+}
+.Container-News{
+    padding: 1%;
+    display: flex; 
+    justify-content: space-between; 
+    
+}
+
+.gun-news,.hero-news,.maintannace-news{
+    background-color: rgb(158, 76, 76);
+    border-radius: 20px;
+    display:  flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px; 
+    padding-left: 10px;
+    /* padding-right: 10px; */
+    
+}
+.des{
+    margin-left: 10px;
+}
+.des h3{
+    padding-top: 20px;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+
+}
+.des p{
+    
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+.image{
+    padding-top: 5px;
+    display: flex;
+    
+}
+.image img{
+    width: 250px;
+    height: 250px;
+}
+/* latest news end */
+@media(max-width: 800px){
+    .Container-News{
+        padding: 1%;
+        display: inline;
+    }
+    .gun-news,.hero-news,.maintannace-news{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+}
+/* FOOTER */
+.footer{
+    background-color: black;
+    width: 100vw;
+    padding-bottom: 10px;
+    height: fit-content;
+}
+.title{
+    padding: 20px;
+    
+    text-align: center;
+   
+}
+.title h3{
+    font-size: 50PX;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright{
+    display: flex;
+    width: 100vw;
+    padding: 20px 0;
+    justify-content: center;
+    text-align: center;
+}
+.copyright p{
+    color: white;
+    font-size: 20px;
+}
+
+/* footer End */
+
+
+  

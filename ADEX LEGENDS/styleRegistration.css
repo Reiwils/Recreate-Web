@@ -1,0 +1,165 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+
+/* HEADER */
+
+/* Header */
+.header{
+    background-color: black;
+    
+    max-width: 100vw;
+    height: fit-content;
+    padding: 0 25px;
+    margin: auto;
+}
+
+.Container-Header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo a img{
+    width: 150px;
+}
+nav{
+    flex: 1;
+    display: inline-block;
+    text-align: right;
+}
+
+nav a{
+    /* display: ; */
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+}
+
+#maps{
+    background-color: red; 
+    padding: 5px;
+    border-radius: 15px;
+}
+
+nav a:hover{
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+@media(max-width: 800px){
+    nav a{
+        display: block;
+    }
+
+    
+}
+/* Header end */
+/* HEADER END */
+
+.container-form{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 5px;
+    box-shadow:0 2px 5px rgb(0, 0, 0.3);
+    /* overflow: hidden; */
+    width: 400px;
+    max-width: 100%;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d546c;
+    border-bottom: 1px solid #bcb8b3;
+    padding: 20px 40px;
+}
+
+.title h2{
+    margin: 0;
+    color: aliceblue;
+}
+
+.title img{
+    width: 60px;
+    height: 40px;
+}
+form{
+    padding: 30px 40px;
+
+}
+
+.conten-form{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.container-form label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.conten-form input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+.conten-form small{
+    visibility: hidden;
+    position: absolute;
+    color: red;
+    bottom: 0;
+    left: 0;   
+}
+
+.conten-form.success small{
+    color: chartreuse;
+    visibility: visible;
+}
+.conten-form.error small{
+    color: red;
+    visibility: visible;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.btn button a{
+    color: black;
+    text-decoration: none;
+}
